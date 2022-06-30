@@ -1,0 +1,35 @@
+.home{
+    width: 80%;
+    background-color: #e5e5e5;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+.home-container{
+    padding-top:1rem ;
+}
+.blogs{
+    margin-top: 2rem;
+    background-color: rgb(204, 204, 227);
+    box-shadow: 3px rgba(153, 150, 150, 0.881) 3px 4px;
+}
+.blog-title h2{
+    letter-spacing: 1px;
+    margin: .5rem 2rem;
+}
+.blog-desc{
+    width: 90%;
+    background-color: rgb(210, 210, 228);
+}
+.blog-image{
+    width: 19rem;
+    height: 15rem
+}
+.blog-image img{
+    width: 100%;
+    height: 100%;
+    justify-content: stretch;
+}
+.blog-desc .desc {
+    margin-left: 2rem;
+    width: 20rem;
+    display: inline-block;
+}
