@@ -10,11 +10,9 @@ import BlogRender from './COMPONENTS/blog-render'
 import EditBlog from './COMPONENTS/edit'
 import MyBlog from './COMPONENTS/my-blog'
 import Favourites from './COMPONENTS/favourites'
-import SignUp from './COMPONENTS/signup'
 import UserView from './COMPONENTS/user-view'
 import UserUpdate from './COMPONENTS/user-update'
-import SignupNEW from '../public/signup'
-import SignupNEW from '../public/signup'
+import SignUP from './COMPONENTS/signup'
 
 function App () {
   const { state, login_success } = useContext(Authentication_Context)
@@ -52,7 +50,7 @@ function App () {
           <Route path='/favourite' element={<Favourites />}></Route>
           <Route path='/user/:id' element={<UserView />}></Route>
           <Route path='/setting/:userId' element={<UserUpdate />}></Route>
-          <Route path='/signup' element={<SignupNEW />} />
+          <Route path='/signup' element={<SignUP />} />
           <Route path='/charts' element={<BarChart />}></Route>
         </Routes>
       </BrowserRouter>
