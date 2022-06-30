@@ -146,7 +146,7 @@ function Navbar () {
                   <a href='' className='mx-3'>
                     forgot?
                   </a>
-                  <a href='' className='mx-3'>
+                  <a href="/signup" className='mx-3'>
                     register?
                   </a>
                 </Col>
