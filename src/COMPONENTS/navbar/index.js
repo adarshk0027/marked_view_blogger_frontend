@@ -31,9 +31,9 @@ const Validation_Schema = yup.object().shape({
 function Navbar () {
   const [showLogin, setLogin] = useState(false)
   const [reset, setReset] = useState(false)
-  
+
   const handleShow = () => setLogin(true)
-  const { state, login_req, login_success, login_fail,Reset } = useContext(
+  const { state, login_req, login_success, login_fail, Reset } = useContext(
     Authentication_Context
   )
   const { authenticate, authenticating, error } = state
@@ -116,11 +116,10 @@ function Navbar () {
                   <MatierialInput
                     name='email'
                     type='text'
-                    label='email'
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value= {!reset ? formik.values.email :""}
-                    placeholder="eg : adarshk0027@gmail.com -> checking"
+                    value={!reset ? formik.values.email : ''}
+                    placeholder=' Email  ( adarshk0027@gmail.com ) -> checking'
                   />
                   {formik.touched && formik.errors.email && (
                     <div className='text-danger'>{formik.errors.email}</div>
@@ -129,11 +128,10 @@ function Navbar () {
                   <MatierialInput
                     name='password'
                     type='password'
-                    label='password'
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.password}
-                    placeholder="eg : 1234567  -> checking"
+                    placeholder='Password  (1234567)  -> checking'
                   />
 
                   {formik.touched && formik.errors.password && (
