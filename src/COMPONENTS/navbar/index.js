@@ -120,6 +120,7 @@ function Navbar () {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value= {!reset ? formik.values.email :""}
+                    placeholder="eg : adarshk0027@gmail.com -> checking"
                   />
                   {formik.touched && formik.errors.email && (
                     <div className='text-danger'>{formik.errors.email}</div>
@@ -132,6 +133,7 @@ function Navbar () {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.password}
+                    placeholder="eg : 1234567  -> checking"
                   />
 
                   {formik.touched && formik.errors.password && (
